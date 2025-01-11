@@ -29,7 +29,6 @@ def mascota_list(request):
 
 def mascota_edit(request,id_mascota):
     mascota=Mascota.objects.get(id=id_mascota)
-    print("testingggg")
     if request.method == 'GET':
         form = MascotaForm(instance = mascota)
     else:

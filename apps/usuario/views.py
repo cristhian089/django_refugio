@@ -11,10 +11,7 @@ from apps.usuario.forms import RegistroForm
 class RegistroUsuario(CreateView):
     model = User
     template_name = "usuario/registrar.html"
-    print('llego')
     
     #form_class = UserCreationForm
     form_class = RegistroForm
-    print('pasa')
     success_url = reverse_lazy('mascota:mascota_listar')
-    print('sigue')
