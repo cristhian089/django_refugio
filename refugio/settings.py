@@ -133,6 +133,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
 #redirigir al index despues de loguear
 LOGIN_REDIRECT_URL = reverse_lazy('adopcion:solicitud_listar')
+LOGOUT_REDIRECT_URL = reverse_lazy('login')
 
 #Configurar correo de recuperar contraseña
 EMAIL_USE_TLS = True

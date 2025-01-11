@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class AdopcionConfig(AppConfig):
-    name = 'adopcion'
+    name = 'apps.adopcion'
