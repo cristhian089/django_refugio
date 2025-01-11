@@ -34,10 +34,8 @@ class SolicitudCreate(CreateView):
         self.object = self.get_object 
         form = self.form_class(request.POST)
         form2 = self.second_form_class(request.POST)
-        print("form1   ",form)
-        print("form2   ",form2)
+        
         if form.is_valid() and form2.is_valid():
-            print("son validos---")
             solicitud = form.save(commit=False)
             solicitud.persona = form2.save()
             solicitud.save()
